@@ -1,0 +1,27 @@
+@import './resets';
+@import './variable';
+
+@function weight($weight-name){
+  @return map-get($font-weights, $weight-name )
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items:stretch;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+section#hero{
+  margin:0;
+  padding:0;
+  background-image: url("../../photos/hero.jpg");
+  width:100vw;
+  height: 100vh;
+  border:1px solid red;
+  
+}

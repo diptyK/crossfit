@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section#hero {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../photos/hero.jpg");
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=main.css.map */
