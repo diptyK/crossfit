@@ -1,27 +1,43 @@
 @import './resets';
 @import './variable';
 
+
 @function weight($weight-name){
   @return map-get($font-weights, $weight-name )
+}
+
+@function font-size($font-size-value){
+  @return map-get($font-size, $font-size-value)
 }
 
 @mixin flexcenter {
   display: flex;
   justify-content: center;
-  align-items:stretch;
+  align-items:center;
 }
 
 body{
   margin:0;
   padding:0;
+  display:flex;
+  flex-direction: column;
 }
-
-section#hero{
+header,main,section,footer{
   margin:0;
   padding:0;
-  background-image: url("../../photos/hero.jpg");
-  width:100vw;
-  height: 100vh;
-  border:1px solid red;
-  
+}
+.hero{
+  width:100%;
+  height:100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("../../selectedImages/final.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.navigation-wrapper{
+  width:100%;
+  height:100px;
+  line-height:1.8;
 }
