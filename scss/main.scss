@@ -10,7 +10,7 @@
   @return map-get($font-size, $font-size-value)
 }
 
-@mixin flexcenter {
+@mixin flexcenter{
   display: flex;
   justify-content: center;
   align-items:center;
@@ -19,13 +19,120 @@
 body{
   margin:0;
   padding:0;
-  display:flex;
-  flex-direction: column;
 }
-header,main,section,footer{
+header,main,section,footer,figure,article{
   margin:0;
   padding:0;
 }
+header{
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  font-family: 'Electrolize', sans-serif;
+  background-color:$yellowsmoke;
+}
+.navigation-wrapper{
+  width:100%;
+  max-width:117rem;
+  margin:0 auto;
+  padding:0 1.5rem;
+}
+.menu-icons{
+  color:$white;
+  border-radius: 100%;
+  font-size: 2rem;
+  position:absolute;
+  top:50%;
+  right:2rem;
+  transform: translateY(-50%);
+  z-index:1500;
+  display: none;
+}
+nav{
+  display: flex;
+  width: 100%;
+  height:6rem;
+}
+.logo_brand-name{
+  width:35rem;
+  height:6rem;
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+a.brand-name{
+  color:$white;
+  font-size:1.6rem;
+  padding-left:1rem;
+}
+ul.nav-list{
+  display:flex;
+width:100%;
+justify-content: center;
+}
+.nav-list li{
+  line-height:6rem;
+  position: relative;
+}
+.sub-menu li{
+  line-height:3rem;
+}
+.nav-list a{
+  display: block;
+  color:$white;
+  padding:0 1rem;
+  text-transform: uppercase;
+  transition:650ms;
+  font-weight:500;
+}
+.nav-list a :hover{
+  color:$orange;
+}
+.sub-menu{
+  width:15rem;
+  display: block;
+  position:absolute;
+  border-top: 3px solid $orange;
+  background-color:$yellowsmoke;
+  z-index:100;
+  top:14rem;
+  opacity: 0;
+  visibility: hidden;
+  transition:all 650ms ease;
+}
+.sub-menu::before{
+  content: "";
+  position: absolute;
+  top:-2.5rem;
+  left:3rem;
+  border:1.2rem solid transparent; 
+  border-bottom-color:$orange;
+}
+.sub-menu .sub-menu::before {
+  top:0.9rem;
+  left:-2.5rem;
+  border:1.2rem solid transparent;
+  border-right-color:$orange;
+}
+.sub-menu .sub-menu{
+  border-top:none;
+  border-left: 3px solid $orange;
+  top:0;
+  left:160%; 
+}
+.nav-list li:hover > .sub-menu{
+  top:6rem;
+  opacity:1;
+  visibility: visible;
+}
+.sub-menu li:hover > .sub-menu{
+  top:0; 
+  left:100%;
+}
+
+// hero section
+
 .hero{
   width:100%;
   height:100vh;
@@ -34,10 +141,226 @@ header,main,section,footer{
   background-image: url("../../selectedImages/final.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position:bottom right;
+  background-attachment: fixed;
+  display:table;
 }
-.navigation-wrapper{
+.hero_message{
+  color:$white;
+  font-weight: weight(regular);
+  margin:0;
+  display:table-cell;
+  vertical-align: middle;
+  padding:22rem 0 0 17rem;
+}
+.hero_text{
+  font-family: 'Poppins', sans-serif;
+  line-height: 3rem;
+  
+}
+.hero_title{
+  width:40rem;
+  font-family: 'Oswald', sans-serif;
+  line-height:6rem;
+  font-size: font-size(xl);
+}
+
+// btn setting
+
+.call-to-action{
+  color:$white;
+  padding:0 2.3rem;
+  background-color:$orange;
+  border:1rem solid $orange;
+  font-family: 'Oswald', sans-serif;
+  font-size: font-size(s);
+  line-height:8rem;
+  }
+
+// main section starts from here
+
+main,section, div,#fluid-container,.service_container,article{
+  padding:0;
+  margin:0;
+}
+#fluid-container{
   width:100%;
-  height:100px;
-  line-height:1.8;
+  max-width:100%;
+  display: flex;
+  flex-flow:row nowrap;
+}
+.service_container, .about_container, .training_container, .upcoming_events_container, .plans_container, .testimonial_container, .news_container{
+  width:100%;
+  max-width:100%;
+  display: flex;
+  flex-flow:row nowrap;
+}
+.classes{
+  width:calc(100% / 3);
+  height: 25rem;
+}
+.group_classes{
+  width:100%;
+  height: 100%;
+  color:$white;
+  background-color:$black;
+  padding:4rem;
+}
+.column1-service_image_container{
+  background-image: url("../../selectedImages/group_classes1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  opacity:0.9;
+}
+.column3-service_image_container{
+  background-image: url("../../selectedImages/for_ladies.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  opacity:0.9;
+}
+.classes_sub-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: font-size(m);
+  color:$lightorange;
+  line-height:1rem;
+}
+.classes_title{
+  font-family: 'Oswald', sans-serif;
+  font-size: font-size(l);
+  padding-bottom:1rem;
+  
+}
+.classes_text{
+  font-family: 'Poppins', sans-serif;
+  font-size: font-size(xs);
+  line-height:1.4rem;
+}
+// about section
+.about_container{
+  width:100%;
+  max-width:100%;
+  display: flex;
+  flex-flow:row nowrap;
+ 
+}
+.intro{
+  width:calc(100% / 2);
+  margin:10rem 0;
+}
+.intro-video{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+// .iframe-container{
+//   position: relative;
+//   width: 100%;
+//   padding-bottom: 60.25%; 
+//   height: 0;
+// }
+// .iframe-container iframe{
+//   position: absolute;
+//   top:0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// // }
+a.video-link{
+  position: relative;
+ }
+.play-btn {
+  width:90px;
+  height:90px;
+  position: absolute;
+  top:0%;
+  bottom: 0%;
+  left: 0%;
+  right:0%;
+  margin:auto;
+  text-align: center;
+}
+i.fa {
+  font-size: 80px;
+  color:$orange;
+}
+i.fa:hover {
+  color:$black;
+}
+.text{
+  padding:0 18rem 4rem 4rem;
+}
+.sub-title,.text_normal,.text_dark{
+  font-family: 'Poppins', sans-serif;
+  font-size:14px;
+  color:$graytext;
+  line-height:1.6rem;
+}
+.title{
+  font-family: 'Oswald', sans-serif;
+  font-size:40px;
+  color:$smokeblack;
+}
+.text_dark{
+  font-size:16px;
+  color:$smokeblack;
+  padding:1rem 0;
+}
+
+// training container 
+
+.training{
+  width:calc(100% / 3);
+  background-color:$gray;
+  text-align: center;
+  padding:2rem 8rem;
+}
+.white-theme{
+  background-color:$smokewhite;
+}
+
+// events section
+
+.events_img{
+  width:40%;
+}
+img.training_image{
+  width:100%;
+  height:100%;
+}
+.events_text{
+  width:60%;
+  padding:8rem 19rem 0 6rem;
+}
+.current-blogs{
+  width:100%;
+  display:flex;
+  flex-flow:row nowrap;
+}
+.blogs{
+  width:calc(100% / 2);
+  padding-right:2rem;
+}
+.number{
+  font-family: 'Oswald', sans-serif;
+  color:$orange;
+  font-size:65px;
+  padding-top:1.8rem;
+}
+.upcoming_event_sub-title{
+  font-family: 'Poppins', sans-serif;
+  font-size:22px;
+  line-height:4.2rem;
+}
+.blog-link{
+  color:$smokeblack;
+}
+.lesspadding{
+  padding:0;
+}
+.white-color-theme{
+  color:$smokewhite;
 }

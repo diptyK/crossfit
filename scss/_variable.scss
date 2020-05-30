@@ -5,7 +5,9 @@ $gray:#f5f5f5;
 $smokewhite:#fefefe;
 $graytext:#ababc0;
 $smokeblack:#1c1a1b;
-$black:#000000;
+$yellowsmoke:rgba(22, 22, 21, 0.6);
+$black:#2e2d2d;
+$lightorange:#d1b3a8;
 
 
 $font-weights:(
@@ -15,10 +17,9 @@ $font-weights:(
 );
 
 $font-size:(
-  "xs":24px,
-  "S":12px,
-  "m":12px,
-  "l":12px,
-  "x-l":12px,
-  "xxl":12px
+  "xs":0.9rem,
+  "S":1rem,
+  "m":1.2rem,
+  "l":2.6rem,
+  "xl":4.8rem
 );

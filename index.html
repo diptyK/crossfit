@@ -5,110 +5,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/main.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>Crossfit</title>
 </head>
 <body>
   <!-- header section -->
   <header>  
-  <div class="hero">
    <div class="navigation-wrapper">
-    <div class="logo_brand-name">
-    <a class="brand-logo" href="index.html">
-      <img class="header_logo-image" src="selectedImages/logo-crossfit.png" alt="dumble as a logo of crossfit">
-    </a>
-    <a class="brand-name" href="index.html">
-     CROSSFIT
-    </a>
-    </div>
-    <div class="header_nav">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-      <ul>
-       <li><a class="nav-items" href="home">HOME</a></li>
-       <li><a class="nav-items" href="about">ABOUT US</a></li>
-       <li><a class="nav-items" href="programs">PROGRAMS</a></li>
-       <li><a class="nav-items" href="coatches/team">COACHES/TEAM</a></li>
-       <li><a class="nav-items" href="testimonials">TESTIMONIALS</a></li>
-       <li><a class="nav-items" href="gallery">GALLERY</a></li>
-       <li><a class="nav-items" href="pricing">PRICING</a></li>
-       <li><a class="nav-items" href="contact">CONTACT</a></li>
-     </ul>
-   </nav>
-   <label for="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
-  </div>
-  </div>
-  <div class="hero_message">
-   <p class="hero_text">Welcome to the Gym</p>
-   <h1 class="hero_title">THE BODY ACHIEVES WHAT THE MIND BELIEVES</h1>
-   <a class="call-to-action button-placement" href="#">READ MORE</a>
-  </div>
+     <nav>
+      <div class="menu-icons">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="logo_brand-name">
+        <a class="brand-logo" href="index.html">
+          <img class="header_logo-image" src="selectedImages/logo-crossfit.png" alt="dumble as a logo of crossfit">
+        </a>
+        <a class="brand-name" href="index.html">
+          CROSSFIT
+        </a>
+      </div>
+      <ul class="nav-list">
+          <li><a class="nav-items" href="home">HOME</a></li>
+          <li><a class="nav-items" href="about">ABOUT US</a>
+            <ul class="sub-menu">
+              <li><a href="">Single Class</a></li>
+              <li><a href="">Personal Trainer</a></li>
+              <li><a href="">FAQ</a>
+                <ul class="sub-menu">
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>  
+              </li>
+              <li><a href="">Single coach</a></li>
+              <li><a href="">Classes For Women</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-items" href="programs">PROGRAMS</a></li>
+          <li><a class="nav-items" href="coatches/team">COACHES/TEAM</a></li>
+          <li><a class="nav-items" href="testimonials">TESTIMONIALS</a></li>
+          <li><a class="nav-items" href="gallery">GALLERY</a></li>
+          <li><a class="nav-items" href="pricing">PRICING</a></li>
+          <li><a class="nav-items" href="contact">CONTACT</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero_message">
+      <p class="hero_text">Welcome to the Gym</p>
+      <p class="hero_title">THE BODY ACHIEVES WHAT THE MIND BELIEVES</p>
+      <a class="call-to-action hero-button-placement" href="#">READ MORE</a>
+    </div>
+  </section>
   <!-- call us now button pending -->
   
  <!-- Main section -->
  <main>
 <section id="fluid-container">
   <div class="service_container">
-  <article class="classes"><img class="service_image_container" alt="" src="" >
-    <div class="group_classes">
-      <h4 class="classes_sub-title">Our Classes</h4>
-      <h1 class="classes_title">GROUP CLASSES</h1>
+  <article class="classes">
+    <div class="group_classes column1-service_image_container">
+      <p class="classes_sub-title">Our Classes</p>
+      <p class="classes_title">GROUP CLASSES</p>
       <p class="classes_text">Small group training in CrossFit. A general physical training programme completed in a friendly, fun environment with like-minded people.</p>
       <a class="call-to-action" href="#">READ MORE</a>
     </div>
   </article>
-  <article class="classes"><img class="service_image_container" alt="" src="" >
+  <article class="classes">
     <div class="group_classes">
-      <h4 class="classes_sub-title">Our Classes</h4>
-      <h1 class="classes_title">PERSONAL TRAINING</h1>
+      <p class="classes_sub-title">Our Classes</p>
+      <p class="classes_title">PERSONAL TRAINING</p>
       <p class="classes_text">One-to-one sessions with an experienced, dedicated coach at times that suit your schedule. The personal attention received in these sessions results in rapid progress.</p>
       <a class="call-to-action" href="#">READ MORE</a>
     </div>
   </article>
-  <article class="classes"><img class="service_image_container" alt="" src="" >
-    <div class="group_classes">
-      <h4 class="classes_sub-title">Our Classes</h4>
-      <h1 class="classes_title">FOR LADIES</h1>
+  <article class="classes">
+    <div class="group_classes column3-service_image_container">
+      <p class="classes_sub-title">Our Classes</p>
+      <p class="classes_title">FOR LADIES</p>
       <p class="classes_text">Specific strength and conditioning training for females in a friendly, all-female, testosterone-free environment! Open to members and non-members alike.</p>
       <a class="call-to-action" href="#">READ MORE</a>
     </div>
   </article>
 </div>
 </section>
+
+<!-- about container -->
+
 <section id="fluid-container">
   <div class="about_container">
     <article class="intro">
-      <a class="intro-video" href="#"></a>
+      <div class="intro-video">
+        <a class="video-link" href="#" ><img class="video_thumbnail-image" src="../selectedImages/intro_video.jpg" alt="">
+          <div class="play">
+            <i class=" play-btn fa fa-play-circle" aria-hidden="true"></i></div>
+        </a>
+        <!-- <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/47KsUtsiHV0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+      </div>
     </article>
-    <article class="intro">
-      <h4 class="intro-sub-title">About Us</h4>
-      <h1 class="intro_title">WHAT IS CROSSFIT ?</h1>
-      <p class="text_dark">Our mission at CrossFit is to improve lives through physical activity in a friendly and welcoming environment.</p>
-      <p class="text_normal">We do this through CrossFit, a fitness program with the aim of preparing you for all of life’s physical challenges. We get you fit for anything. We cater for all levels of fitness, from retiree with no training experience to the elite professional athlete, and everything in between. Not all gyms are the same. Here we offer a training experience like no other. Come in and try it for yourself.</p>
+
+    <article class="intro text">
+        <p class="sub-title">About Us</p>
+        <h1 class="title">WHAT IS CROSSFIT ?</h1>
+        <p class="text_dark">Our mission at CrossFit is to improve lives through physical activity in a friendly and welcoming environment.</p>
+        <p class="text_normal">We do this through CrossFit, a fitness program with the aim of preparing you for all of life’s physical challenges. We get you fit for anything. We cater for all levels of fitness, from retiree with no training experience to the elite professional athlete, and everything in between. Not all gyms are the same. Here we offer a training experience like no other. Come in and try it for yourself.</p>
     </article>
   </div>
 </section>
+
+<!-- training container -->
+
 <section id="fluid-container">
 <div class="training_container">
   <article class="training">
       <figure class="training_icon-container">
-        <img class="training_icon" src="" alt="">
+        <img class="training_icon functional_training_icon" src="../selectedImages/training.png" alt="">
     </figure>
     <p class=text_dark>Functional training</p>
     <p class="text_normal">Squeeze 100% benefit from the universal training: speed, strength, endurance.</p>
     </article>
-    <article class="training">
+    <article class="training white-theme">
       <figure class="training_icon-container">
-        <img class="training_icon" src="" alt="">
+        <img class="training_icon" src="../selectedImages/cardio.png" alt="">
     </figure>
     <p class=text_dark>Cardio training</p>
     <p class="text_normal">Improve your health, endurance and cardiovascular system.</p>
     </article>
     <article class="training">
       <figure class="training_icon-container">
-        <img class="training_icon" src="" alt="">
+        <img class="training_icon" src="../selectedImages/stronger.png" alt="">
     </figure>
     <p class=text_dark>Become stronger</p>
     <p class="text_normal">Strength training will make you a monster of the iron world with incredible power.</p>
@@ -117,67 +147,77 @@
 </section>
 <section id="fluid-container">
   <div class="training_container">
-    <article class="training">
+    <article class="training white-theme">
         <figure class="training_icon-container">
-          <img class="training_icon" src="" alt="">
+          <img class="training_icon" src="../selectedImages/personal.png" alt="">
       </figure>
       <p class=text_dark>Personal trainer</p>
       <p class="text_normal">Next to you will always be a personal trainer, who will teach, prompt and insure.</p>
       </article>
       <article class="training">
         <figure class="training_icon-container">
-          <img class="training_icon" src="" alt="">
+          <img class="training_icon" src="../selectedImages/body.png" alt="">
       </figure>
       <p class=text_dark>Aesthetics of the body</p>
       <p class="text_normal">Our training will make your body not only hardy, but also beautiful.</p>
       </article>
-      <article class="training">
+      <article class="training white-theme">
         <figure class="training_icon-container">
-          <img class="training_icon" src="" alt="">
+          <img class="training_icon" src="../selectedImages/sports.png" alt="">
       </figure>
       <p class=text_dark>Sports nutritian</p>
       <p class="text_normal">You will learn about all the principles of healthy sports nutrition.</p>
       </article>
   </div>
   </section>
-  <section id="fluid-container">
-    <div class="upcoming_events_container">
-      <article class="events">
-        <figure class="image-container">
-          <img class="training_image" src="" alt="">
+
+  <!-- events container -->
+  
+<section id="fluid-container">
+  <div class="upcoming_events_container">
+    <article class="events_img">
+      <figure class="image-container">
+        <img class="training_image" src="../selectedImages/events.jpg" alt=""> 
       </figure>
-      </article>
-      <article class="events">
-        <h4 class="event_sub-title">Be the first! Be the winner!</h4>
-        <h1 class="event_title">UPCOMING EVENTS</h1>
-        <section class="blogs">
-        <p class="number">16</p>
-        <p class="mmyy">Apr, 2020</p>
-        <h3 class="upcoming_event_sub-title">Battle for Middle Ground</h3>
-        <p class="upcoming_event_text">Two-day workshop and the toughest, but most exciting competition on the US calendar! Online qualifiers start in April after the Open. Athletes compete to qualify for a live final in June.</p>
+    </article>
+    <article class="events_text">
+      <p class="sub-title">Be the first! Be the winner!</p>
+      <p class="title">UPCOMING EVENTS</p>
+      <section class="current-blogs">
+        <article class="blogs">
+          <p class="number">16</p>
+          <p class="sub-title ">Apr, 2020</p>
+          <p class="upcoming_event_sub-title"><a class="blog-link" href="#">Battle for Middle Ground</a></p>
+            <p class="text_dark lesspadding">Two-day workshop and the toughest, but most exciting competition on the US calendar! Online qualifiers start in April after the Open. Athletes compete to qualify for a live final in June.</p>
+        </article>
+        <article class="blogs">
+          <p class="number">23</p>
+          <p class="sub-title">May, 2020</p>
+          <p class="upcoming_event_sub-title"><a class="blog-link" href="#">Female pairs Competition</a></p>
+          <p class="text_dark lesspadding">Female Scaled mixed pairs challenge is a great competition for scaled athletes looking to challenge themselves in a friendly atmosphere. Grab yourself a partner and sign up.</p>
+        </article>
       </section>
-      <section class="blogs">
-        <p class="number">23</p>
-        <p class="mmyy">May, 2020</p>
-        <h3 class="upcoming_event_sub-title"><a class="blog-link" href="blog.html">Female pairs Competition</a></h3>
-        <p class="upcoming_event_text">Female Scaled mixed pairs challenge is a great competition for scaled athletes looking to challenge themselves in a friendly atmosphere. Grab yourself a partner and sign up.</p>
-      </section>
-      </article>
-    </div>
-  </section>
-  <section id="fluid-container"><img class="timer_bg_image" alt="" src="../../her.jpg" >
+    </article>
+  </div>
+</section>
+
+  <!-- timer container -->
+  <section id="fluid-container"><img class="timer_bg_image" alt="" src="../../hero.jpg" >
     <article class="timer_container">
-      <h4 class="timer_sub-title">Be a part of our community</h4>
-      <h1 class="timer_title">JOIN OUR NEXT COMPETITION</h1>
-      <div class="countdown_timer_wrapper"></div>
-      <a class="call-to-action" href="#">READ MORE</a>
+      <p class="sub-title">Be a part of our community</p>
+      <p class="title white-color-theme">JOIN OUR NEXT COMPETITION</p>
+      <a class="call-to-action" href="#">ORDER NOW</a>
+      <!-- <div class="countdown_timer_wrapper"></div> -->
+      <!-- <a class="call-to-action" href="#">READ MORE</a> -->
     </article>
   </section>
+
   <section id="fluid-container">
+    <div class="plans_container">
     <h4 class="plan_sub-title">Ready to go ?</h4>
     <h1 class="plan_title">CHOOSE YOUR PLAN</h1>
     <div class="plan_pricing_container">
-    <article class="plans_container">
+    <article class="plans">
                 <div class="plan_pricing">
                   <p class="number">$23</p>
                   <p class="price_text">Per week - restricted plan</p>
@@ -189,7 +229,7 @@
                     <a class="call-to-action" href="#">ORDER NOW</a>
                 </div>
     </article>
-    <article class="plans_container">
+    <article class="plans">
       <div class="plan_pricing">
         <p class="number">$60</p>
         <p class="price_text">Per week - unlimited plan</p>
@@ -201,7 +241,7 @@
           <a class="call-to-action" href="#">ORDER NOW</a>
       </div>
 </article>
-<article class="plans_container">
+<article class="plans">
   <div class="plan_pricing">
     <p class="number">$250</p>
     <p class="price_text">Per pass - 10x class pass </p>
@@ -214,7 +254,11 @@
   </div>
 </article>
 </div>
+</div>
 </section>
+
+<!-- testimonial container -->
+
 <section id="fluid-container"><img class="testimonial_bg_image" alt="" src="../../her.jpg" >
   <article class="testimonial_container">
     <h4 class="testimonial_sub-title">What says our clients ?</h4>
@@ -224,6 +268,9 @@
    <!-- need to work in thi section -->
   </article>
 </section>
+
+<!-- blog news -->
+
 <section id="fluid-container">
   <div class="news_container">
       <article class="news">
