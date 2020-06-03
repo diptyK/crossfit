@@ -166,7 +166,7 @@ ul.nav-list {
   height: 100vh;
   min-width: 100%;
   min-height: 100%;
-  background-image: url("../../selectedImages/final.jpg");
+  background-image: url("../../selectedImages/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -420,6 +420,19 @@ img.training_image {
 
 .lesspadding {
   padding: 0;
+}
+
+.timer_container {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  border: 2px solid green;
+  background-image: url("events.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
 }
 
 .white-color-theme {
