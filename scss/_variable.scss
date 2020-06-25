@@ -1,6 +1,6 @@
 $orange:#e8441d;
 $orange-bg:#be3413;
-$white:#ffffff;
+$white:#e8e8e8;
 $gray:#f5f5f5;
 $smokewhite:#fefefe;
 $graytext:#ababc0;
@@ -8,6 +8,8 @@ $smokeblack:#1c1a1b;
 $yellowsmoke:rgba(22, 22, 21, 0.6);
 $black:#2e2d2d;
 $lightorange:#d1b3a8;
+$footergray:#696969;
+$fullblack:#000000;
 
 
 $font-weights:(
@@ -17,9 +19,13 @@ $font-weights:(
 );
 
 $font-size:(
-  "xs":0.9rem,
-  "S":1rem,
-  "m":1.2rem,
-  "l":2.6rem,
-  "xl":4.8rem
+  "xxs":12px,
+  "xs":14px,
+  "S":16px,
+  "m":18px,
+  "l":20px,
+  "xl":22px,
+  "xxl":32px,
+  "xxxl":40px,
+  "xxxxl":65px
 );

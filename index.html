@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- header section -->
-  <header>  
+  <!-- <header>  
    <div class="navigation-wrapper">
      <nav>
       <div class="menu-icons">
@@ -28,7 +28,7 @@
       </div>
       <ul class="nav-list">
           <li><a class="nav-items" href="home">HOME</a></li>
-          <li><a class="nav-items" href="about">ABOUT US</a>
+          <li><a class="nav-items" href="about">ABOUT</a>
             <ul class="sub-menu">
               <li><a href="">Single Class</a></li>
               <li><a href="">Personal Trainer</a></li>
@@ -51,47 +51,59 @@
       </ul>
     </nav>
   </div>
-</header>
+</header> -->
   <!-- hero section -->
   <section class="hero">
     <div class="hero_message">
-      <p class="hero_text">Welcome to the Gym</p>
-      <p class="hero_title">THE BODY ACHIEVES WHAT THE MIND BELIEVES</p>
+      <p class="hero_sub-title">Welcome to the Gym</p>
+      <div class="title-division">
+      <p class="hero_title">THE BODY ACHIEVES</p>
+      <p class="hero_title">WHAT THE MIND </p>
+      <p class="hero_title">BELIEVES</p>
+    </div>
       <a class="call-to-action hero-button-placement" href="#">READ MORE</a>
     </div>
   </section>
   <!-- call us now button pending -->
   
  <!-- Main section -->
- <main>
-<section id="fluid-container">
-  <div class="service_container">
-  <article class="classes">
-    <div class="group_classes column1-service_image_container">
-      <p class="classes_sub-title">Our Classes</p>
-      <p class="classes_title">GROUP CLASSES</p>
-      <p class="classes_text">Small group training in CrossFit. A general physical training programme completed in a friendly, fun environment with like-minded people.</p>
-      <a class="call-to-action" href="#">READ MORE</a>
-    </div>
-  </article>
-  <article class="classes">
-    <div class="group_classes">
-      <p class="classes_sub-title">Our Classes</p>
-      <p class="classes_title">PERSONAL TRAINING</p>
-      <p class="classes_text">One-to-one sessions with an experienced, dedicated coach at times that suit your schedule. The personal attention received in these sessions results in rapid progress.</p>
-      <a class="call-to-action" href="#">READ MORE</a>
-    </div>
-  </article>
-  <article class="classes">
-    <div class="group_classes column3-service_image_container">
-      <p class="classes_sub-title">Our Classes</p>
-      <p class="classes_title">FOR LADIES</p>
-      <p class="classes_text">Specific strength and conditioning training for females in a friendly, all-female, testosterone-free environment! Open to members and non-members alike.</p>
-      <a class="call-to-action" href="#">READ MORE</a>
-    </div>
-  </article>
-</div>
-</section>
+<main> 
+
+  <section id="fluid-container">
+    <div class="service_container">
+    <article class="classes column1-service_image_container">
+        <p class="classes_sub-title">Our Classes</p>
+        <p class="title title-color-white">GROUP CLASSES</p>
+        <div class="margin-adjustment-for-classes_text">
+        <p class="classes_text">Small group training in CrossFit. A general physical training programme completed in a friendly, fun environment with like-minded people.</p>
+      </div>
+        <div class="btn">
+          <a href="#">READ MORE</a>
+        </div>
+    </article>
+    <article class="classes">
+        <p class="classes_sub-title">Our Classes</p>
+        <p class="title title-color-white">PERSONAL TRAINING</p>
+        <div class="margin-adjustment-for-classes_text">
+        <p class="classes_text">One-to-one sessions with an experienced, dedicated coach at times that suit your schedule. The personal attention received in these sessions results in rapid progress.</p>
+        </div>
+        <div class="btn">
+          <a  href="#">READ MORE</a>
+        </div>
+    </article>
+    <article class="classes column3-service_image_container ">
+        <p class="classes_sub-title">Our Classes</p>
+        <p class="title title-color-white">FOR LADIES</p>
+        <div class="margin-adjustment-for-classes_text">
+        <p class="classes_text">Specific strength and conditioning training for females in a friendly, all-female, testosterone-free environment! Open to members and non-members alike.</p>
+        </div>
+        <div class="btn">
+          <a href="#">READ MORE</a>
+        </div>
+    </article>
+  </div>
+  </section>
+
 
 <!-- about container -->
 
@@ -101,14 +113,14 @@
       <div class="intro-video">
         <a class="video-link" href="#" ><img class="video_thumbnail-image" src="../selectedImages/intro_video.jpg" alt="">
           <div class="play">
-            <i class=" play-btn fa fa-play-circle" aria-hidden="true"></i></div>
+            <i class="play play-btn fa fa-play-circle" aria-hidden="true"></i></div>
         </a>
       </div>
     </article>
 
     <article class="intro text">
         <p class="sub-title">About Us</p>
-        <h1 class="title">WHAT IS CROSSFIT ?</h1>
+        <h1 class="title .title-color-black">WHAT IS CROSSFIT ?</h1>
         <p class="text_dark">Our mission at CrossFit is to improve lives through physical activity in a friendly and welcoming environment.</p>
         <p class="text_normal">We do this through CrossFit, a fitness program with the aim of preparing you for all of life’s physical challenges. We get you fit for anything. We cater for all levels of fitness, from retiree with no training experience to the elite professional athlete, and everything in between. Not all gyms are the same. Here we offer a training experience like no other. Come in and try it for yourself.</p>
     </article>
@@ -166,16 +178,20 @@
       <p class="text_normal">You will learn about all the principles of healthy sports nutrition.</p>
       </article>
   </div>
-  </section>
+  </section> 
 
   <!-- events container -->
-  
+
 <section id="fluid-container">
   <div class="upcoming_events_container">
     <article class="events_img">
-      <figure class="image-container">
-        <img class="training_image" src="../selectedImages/events.jpg" alt=""> 
-      </figure>
+      <picture class="image-container">
+        <source media="(min-width:600px) and (max-width:1100px)"
+                srcset="../selectedImages/event-tablet.png">   
+        <source media="(min-width:1200px)"
+                srcset="../selectedImages/event.png">   
+        <img class="training_image" src="../selectedImages/event-mobile.png" alt="">
+     </picture>
     </article>
     <article class="events_text">
       <p class="sub-title">Be the first! Be the winner!</p>
@@ -185,7 +201,7 @@
           <p class="number">16</p>
           <p class="sub-title ">Apr, 2020</p>
           <p class="upcoming_event_sub-title"><a class="blog-link" href="#">Battle for Middle Ground</a></p>
-            <p class="text_dark lesspadding">Two-day workshop and the toughest, but most exciting competition on the US calendar! Online qualifiers start in April after the Open. Athletes compete to qualify for a live final in June.</p>
+            <p class="text_dark ">Two-day workshop and the toughest, but most exciting competition on the US calendar! Online qualifiers start in April after the Open. Athletes compete to qualify for a live final in June.</p>
         </article>
         <article class="blogs">
           <p class="number">23</p>
@@ -199,7 +215,7 @@
 </section>
 
   <!-- timer container -->
-  <section id="fluid-container">
+  <!-- <section id="fluid-container">
     <article class="timer_container">
       <p class="sub-title">Be a part of our community</p>
       <p class="title white-color-theme  title-line-height">JOIN OUR NEXT COMPETITION</p>
@@ -208,57 +224,68 @@
       </div>
       <a class="call-to-action" href="#">REGISTER NOW</a>
     </article>
-  </section>
+  </section> -->
+
 <!-- plans container -->
   <section id="fluid-container">
     <div class="plans_container">
       <P class="sub-title">Ready to go ?</P>
       <P class="title">CHOOSE YOUR PLAN</P>
       <div class="plan_pricing_container">
+
         <article class="plans">
           <div class="plan_pricing">
-            <p class="number">$23</p>
+            <p class="number  no-padding">$23</p>
             <p class="white_text">Per week - restricted plan</p>
           </div>
           <div class="plan_description">
             <p class="text_normal plan_description_text-line-height-adjust">CrossFit 3 X per week</p>
             <p class="text_normal plan_description_text-line-height-adjust">Workshops (additional Fee)</p>
             <p class="text_normal plan_description_text-line-height-adjust">Specific block programs</p>
-            <a class="call-to-action" href="#">ORDER NOW</a>
+            <div class="btn plan_btn_placement_adjustment">
+              <a  href="#">ORDER NOW</a>
+            </div>
           </div>
         </article>
+
         <article class="plans">
           <div class="plan_pricing">
-            <p class="number">$60</p>
+            <p class="number no-padding">$60</p>
             <p class="white_text">Per week - unlimited plan</p>
           </div>
           <div class="plan_description">
             <p class="text_normal plan_description_text-line-height-adjust">Unlimited CrossFit classes </p>
             <p class="text_normal plan_description_text-line-height-adjust">Free Access to Workshops</p>
             <p class="text_normal plan_description_text-line-height-adjust">20% off Specific Block</p>
-            <a class="call-to-action" href="#">ORDER NOW</a>
+            <div class="btn plan_btn_placement_adjustment">
+              <a  href="#">ORDER NOW</a>
+            </div>
           </div>
         </article>
+
         <article class="plans">
           <div class="plan_pricing">
-            <p class="number">$250</p>
+            <p class="number  no-padding">$250</p>
             <p class="white_text">Per pass - 10x class pass </p>
           </div>
           <div class="plan_description">
             <p class="text_normal plan_description_text-line-height-adjust">10 Week Expiry</p>
             <p class="text_normal plan_description_text-line-height-adjust">Workshops (additional Fee)</p>
             <p class="text_normal plan_description_text-line-height-adjust">Specific Block Programs</p>
-            <a class="call-to-action" href="#">ORDER NOW</a>
+            <div class="btn plan_btn_placement_adjustment">
+              <a  href="#">ORDER NOW</a>
+            </div>
           </div>
+         
         </article>
       </div>
     </div>
-  </section>
+  </section> 
 
 <!-- testimonial container -->
 
 <section id="fluid-container">
-  <article class="testimonial_container">
+  <div class="testimonial_container">
     <h4 class="sub-title">What says our clients ?</h4>
     <h1 class="title white-color-theme  title-line-height">TESTIMINIALS</h1>
     <div class="testimonial">
@@ -280,7 +307,6 @@
         <div class="control">
           <span class="arrow left">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
-
           </span>
           <span class="arrow right">
             <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -293,8 +319,8 @@
         </div>
       </div>
     </div>
-  </article>
-</section>
+  </div>
+</section> 
 
 <!-- blog news -->
 
@@ -357,19 +383,19 @@
 </div>
   </div>
 </section>
- </main>
+ </main> 
 
  <!-- footer section -->
-<footer id="footer-fluid-container">
+ <footer id="footer-fluid-container">
   <section class="main-footer-section">
-    <div class="footer_nav">
 
+    <div class="footer-company-info">
       <div class="company_logo_brandname">
         <a class="footer_company_logo_brandname" href="index.html">
         <img class="footer_logo_image" src="selectedImages/logo-crossfit.png" alt="dumble as a logo of crossfit"></a>
-        <a class="brand-name">CROSSFIT</a>
+        <a class="brand-name ">CROSSFIT</a>
       </div>
-      <div class="company_description">
+      <div class=" sub-title company_description">
         <p>CrossFit is our life and philosophy. We offer one-on-one  training, sports specific programs for athletes, kettlebell training / instruction, as well as personalized nutritional programs.
         </p>
       </div>
@@ -391,78 +417,11 @@
         </a>
       </div>
     </div>
-    <div class="footer_nav">
-      <p>dkhdgjhcsdjkgcf</p>
-    </div>
-    <div class="footer_nav">
-      <p>dkhdgjhcsdjkgcf</p>
-    </div>
-  </section>
-  <section class="copyright-section">
-    <p>Copywrite &copy; 2020 All Rights Reserved </p>
-  </section>
-</footer>
 
 
-
- <!-- <footer id="fluid-container"> -->
-   <!-- footer has 2 sections , 1 for main footer and 2nd for copyright -->
-   <section class="footer-section">
-
-    <!-- footer section has 3 containers , 1 for company summary , 2nd for links and 3rd for contact -->
-    <div class="footer_nav">
-
-      <!-- summary section starts here -->
-      <section class="Company_summary">
-
-        <!-- summary section has 3 containers , 1 for logo & brandname -->
-        <div class="company_logo_brandname">
-          <a class="footer_company_logo_brandname" href="index.html">
-          <img class="footer_logo_image" src="selectedImages/logo-crossfit.png" alt="dumble as a logo of crossfit">
-          <span class="brand-name">CROSSFIT</span>
-          </a>
-        </div>
-        <!-- 2nd for company desc -->
-        <div class="company_description">
-          <p>CrossFit is our life and philosophy. We offer one-on-one  training, sports specific programs for athletes, kettlebell training / instruction, as well as personalized nutritional programs.
-          </p>
-        </div>
-        <!-- 3rd for social media icons -->
-        <div class="social_media_icons">
-          <a class="facebook" href="#" target="_blank">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a class="twitter" href="#" target="_blank">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a class="youtube" href="#" target="_blank">
-            <i class="fa fa-youtube" aria-hidden="true"></i> 
-          </a>
-          <a class="linkedin" href="#" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a class="googleplus" href="#" target="_blank">
-            <i class="fa fa-google-plus" aria-hidden="true"></i> 
-          </a>
-        </div>
-      </section>
-
-    </div>
-       <!-- summary section ends here -->
-
-       <!--( 2nd container)link section starts here  -->
-    <div class="footer_nav">
-
-        <!-- links section has 2 sections, 1st is quick link 2nd is programs -->
-
-        <!-- quick links section starts here -->
-        <section class="quick_links">
-          <!-- heading container -->
-          <div class="quick_links_heading">
-            <p>Quick Links</p>
-          </div>
-          <!-- links container -->
-          <div class="footer_nav_links">
+    <div class="footer-links">
+      <div class="quick-links">
+        <p class="link-sub-title">Quick Links</p>
             <ul>
               <li>
                 <a class="footer-nav-items" href="home">
@@ -501,33 +460,20 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </section>
-         <!-- quick links section ends here -->
-
-       <!-- program links section starts here -->
-        <section class="programs_link">
-
-           <!-- heading container -->
-
-          <div class="programs_heading">
-            <p>Programs</p>
-          </div>
-
-           <!-- links container -->
-
-          <div class="footer_nav_links">
-            <ul>
+      </div>
+      <div class="program-links">
+        <p class="link-sub-title">Programs</p>    
+          <ul>
               <li>
                 <a class="footer-nav-items" href="home">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  Group_classes
+                 <i class="fa fa-angle-right" aria-hidden="true"></i>
+                 Group_classes
                 </a>
               </li>
               <li>
                 <a class="footer-nav-items" href="about">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  Personal Training
+                 Personal Training
                 </a>
               </li>
               <li>
@@ -545,7 +491,7 @@
               <li>
                 <a class="footer-nav-items" href="faq">
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  Lifting & Gymnastics
+                 Lifting & Gymnastics
                 </a>
               </li>
               <li>
@@ -554,87 +500,48 @@
                   Adaptation Club
                 </a>
               </li>
-            </ul>
-          </div>
-        </section>
-    </div>
-       <!-- link section ends here  -->
-
-       <!-- (3rd container)contact section starts here  --> 
-    <div class="footer_nav">
-      <article class="Contacts_container">
-        <div class="contacts">
-    <div class="Contacts_heading">
-        <p>Contacts</p>
-    </div>
-   <div class="contact_ways">
-    <!-- <p class="color-me"><i class="fa fa-map-marker" aria-hidden="true"></i> 6 Main Street,Carrigtohill,Cork Ireland</p>
-    <p class="color-me"><i class="fa fa-phone" aria-hidden="true"></i> +353 899 434 873</p>
-    <p class="color-me"> <i class="fa fa-envelope" aria-hidden="true"></i> dipty1991kumari@gmail.com</p> -->
-    <section class="address">
-      <div class="left-align-icon>">
-      <figure class="address_icon-container">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-      </figure>
+          </ul>
       </div>
-      <div class="right-align-text">
-        <p class="Address_heading">Address</p>
-        <address class="address_paragraph">470 Lucy Forks, Patriciafurt, YC7B 3UT</address>
     </div>
-  </section>
-  <section class="call">
-    <div class="left-align-icon>">
-    <figure class="call_icon-container">
-      <i class="fa fa-phone" aria-hidden="true"></i>
-    </figure>
-    </div>
-    <div class="right-align-text">
-      <p class="Address_heading">Call us now</p>
-      <p class="address_paragraph">(384)1067572</p>
-  </div>
-  </section>
-  <section class="Email">
-    <div class="left-align-icon">
-    <figure class="email_icon-container">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-    </figure>
-    </div>
-    <div class="right-align-text">
-      <p class="Address_heading">Email Us</p>
-      <p class="address_paragraph">mail@demolink.com</p>
-  </div>
-  </section>
-</div>
+
+    <div class="footer-Contacts">
+      <p class="link-sub-title">Contacts</p>
+      <div class="row">
+        <div class="column1">
+          <i class="fa fa-map-o" aria-hidden="true"></i>
         </div>
-      </article>
-      <!-- contact section ends here  -->
+        <div class="column2">
+          <p class="sub-title">Address</p>
+          <p class="contact-text">470 Lucy Forks, Patriciafurt, YC7B 3UT</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="column2">
+          <p class="sub-title">Call us now</p>
+          <p class="contact-text">(384)1067572</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="column2">
+          <p class="sub-title">Email Us</p>
+          <p class="contact-text">mail@demolink.com</p>
+        </div>
+      </div>
     </div>
-<!-- main section ends here  -->
+  </section> 
+  <section class="copyright-section">
+    <p class="copyright-text">Copywrite &copy; 2020 All Rights Reserved </p>
+  </section>
 
-<!-- copyright section starts here -->
-    <section class="copywrite-section">
-      <p>Copywrite &copy; 2020 All Rights Reserved </p>
-    </section>
-    
-<!-- copyright section ends here -->
+</footer>
+
  
- <!-- </footer> -->
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -644,13 +551,12 @@
     <script src="https://use.fontawesome.com/7cc5ee305e.js"></script>
 
     <!-- script for countdown timer -->
-    <script>
-      // var dest =new Date("oct 9,2020 10:00:00").getTime();
-      // var now = new Date().getTime();
-      // var diff= dest - now;
-      // console (diff);
-
-    </script>
+    <!-- <script>
+      var dest =new Date("oct 9,2020 10:00:00").getTime();
+      var now = new Date().getTime();
+      var diff= dest - now;
+      console (diff);
+    </script> -->
 
     <!-- for testimonial slider coursel -->
     <script>
