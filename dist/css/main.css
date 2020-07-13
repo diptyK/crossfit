@@ -611,17 +611,22 @@ i.fa:hover {
 
 .timer_container, .testimonial_container {
   width: 100%;
-  height: 100%;
-  padding: 100px 0 100px 0;
-  min-width: 100%;
-  min-height: 100%;
+  padding: 4rem 0;
   text-align: center;
-  background-image: url("../../selectedImages/timer.png");
+  background: url("../../selectedImages/timer.png") no-repeat center center;
   opacity: 0.9;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: fixed;
+}
+
+@media (min-width: 1200px) {
+  .timer_container, .testimonial_container {
+    padding: 100px 0 100px 0;
+  }
+}
+
+.countdown-padding-adjust {
+  padding-bottom: 2.5rem;
 }
 
 .white-color-theme {
@@ -694,7 +699,7 @@ i.fa:hover {
   font-family: 'Poppins', sans-serif;
   color: #e8e8e8;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0px;
 }
@@ -735,8 +740,14 @@ i.fa:hover {
 }
 
 .testimonial {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .testimonial {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
 
 .carousel {
@@ -771,11 +782,24 @@ i.fa:hover {
       -ms-flex-flow: column;
           flex-flow: column;
   font-size: 20px;
-  padding: 1rem 27rem 5rem 27rem;
+  padding: 0 5rem;
+}
+
+@media (max-width: 599px) {
+  .slider section {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider section {
+    padding: 1rem 27rem 2rem 27rem;
+  }
 }
 
 .name-line-height {
   line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .left, .right {
@@ -792,11 +816,28 @@ i.fa:hover {
 }
 
 .left {
-  left: 10px;
+  left: 5px;
+}
+
+@media (min-width: 1200px) {
+  .left {
+    left: 10px;
+  }
+}
+
+i.fa-angle-left {
+  color: #e8441d;
+  padding-left: 0.4rem;
 }
 
 .right {
-  right: 10px;
+  right: 5px;
+}
+
+@media (min-width: 1200px) {
+  .right {
+    right: 10px;
+  }
 }
 
 .control ul {
@@ -1078,8 +1119,8 @@ i.fa-angle-right {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

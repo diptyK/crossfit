@@ -463,12 +463,18 @@ i.fa:hover {
 
 .timer_container, .testimonial_container {
   width:100%;
-// padding:8rem 0 8rem 0;
+  padding:4rem 0;
+  @include for-size(desktop-up){
+  padding:100px 0 100px 0;
+  }
   text-align: center;
   background: url("../../selectedImages/timer.png") no-repeat center center;
   opacity:0.9;
   background-size:cover;
   background-attachment: fixed;
+}
+.countdown-padding-adjust{
+  padding-bottom:2.5rem;
 }
 .white-color-theme{
   color:$smokewhite;
@@ -486,33 +492,6 @@ i.fa:hover {
 }
 
 // coding for timer pending
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -548,6 +527,7 @@ i.fa:hover {
 .plans{
   width:calc(100% / 3 - 2rem);
   margin:1.5rem 1rem;
+  // border:1px solid rgb(207, 58, 163);
 }
 
 .plan_pricing{
@@ -563,7 +543,7 @@ i.fa:hover {
 font-family: 'Poppins', sans-serif;
 color:$white;
 font-weight: weight(regular);
-font-size: 16px;
+font-size: 14px;
 line-height: 1.2;
 @include for-size(desktop-up){
 font-size: 18px;
@@ -589,39 +569,19 @@ letter-spacing: 0px;
 .no-padding{
   padding:0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // testimonial section
 
 .testimonial_container{
-  background: url("../../selectedImages/testimonial_bgi.jpg") no-repeat center center;
+  background-image: url("../../selectedImages/testimonial_bgi.jpg");
   opacity:1.0;
 }
 
 .testimonial {
+  width:100%;
+  @include for-size(desktop-up){
   width: 80%;
   margin:20px auto;
+  }
 }
 .carousel {
   overflow: hidden;
@@ -641,10 +601,17 @@ letter-spacing: 0px;
   display: flex;
   flex-flow:column;
   font-size: 20px;
-  padding:1rem 27rem 5rem 27rem;
+  padding:0 5rem;
+  @include for-size(phone-only){
+    padding:0 2.5rem;
+  }
+  @include for-size(desktop-up){
+  padding:1rem 27rem 2rem 27rem;
+}
 }
 .name-line-height{
   line-height:2.5rem;
+  margin-bottom:2rem;
 }
 .left, .right {
   position: absolute;
@@ -657,10 +624,20 @@ letter-spacing: 0px;
   -webkit-user-select: none;
 }
 .left {
-  left: 10px;
+  left: 5px;
+  @include for-size(desktop-up){
+    left: 10px;
+  }
 }
-.right {
-  right: 10px;
+i.fa-angle-left{
+  color:$orange;
+  padding-left: 0.4rem;
+}
+.right{
+  right: 5px;
+  @include for-size(desktop-up){
+    right: 10px;
+  }
 }
 .control ul {
   list-style: none;
@@ -683,59 +660,6 @@ letter-spacing: 0px;
 .control ul li.selected {
   background:$orange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // blog section
 .news_container{
@@ -864,7 +788,8 @@ a.footer-nav-items, .contact-text{
 }
 a.footer-nav-items:hover{
   color:$orange;
-i.fa-angle-left, i.fa-angle-right{
+}
+i.fa-angle-right{
   color:$orange;
   padding-right:0.4rem;
 }
@@ -878,7 +803,7 @@ i.fa-angle-left, i.fa-angle-right{
 }
 .row{
   display:flex;
-  flex-flow:row wrap;
+  flex-flow:row nowrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
