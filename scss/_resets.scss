@@ -11,5 +11,14 @@ html,body{
   scroll-behavior:smooth;
   padding: 0;
   margin: 0;
-  // overflow-x: hidden;
+}
+header,nav,main,section,footer,figure,picture,article,a,ul,li,nav,#fluid-container,.service_container{
+  margin:0;
+  padding:0;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
