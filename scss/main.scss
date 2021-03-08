@@ -169,7 +169,7 @@ ul.sub-menu li:hover > ul.sub-menu{
 }
 @media screen and (max-width:767px){
   ul.nav-list{
-    position:fixed;
+    position: absolute;
     top:100px;
     left:0;
     right: 0;
@@ -194,7 +194,6 @@ ul.sub-menu li:hover > ul.sub-menu{
   ul.sub-menu, ul.sub-menu ul.sub-menu{
   position: initial;
   border:none;
-  // border-left-color: $orange;
   margin-left: 1rem;
   max-height: 0;
   }
@@ -280,61 +279,57 @@ ul.sub-menu li:hover > ul.sub-menu{
   color:$white;
   font-weight:400 ;
 }
-
 .hero_sub-title{
   font-family: 'Poppins', sans-serif;  
   margin-bottom:1rem;
-@include for-size(phone-only) {
+  @include for-size(phone-only) {
   font-size:14px;
   line-height: 14px;
-}
-@include for-size(tablet-portrait-up) {
+  }
+  @include for-size(tablet-portrait-up) {
   font-size:16px;
   line-height: 16px;
-}
-@include for-size(tablet-landscape-up) {
+  }
+  @include for-size(tablet-landscape-up) {
   font-size:18px;
   line-height: 18px;
-}
-@include for-size(desktop-up) {
+  }
+  @include for-size(desktop-up) {
   font-size:20px;
   line-height: 20px;
-}
-@include for-size(big-desktop-up) {
+  }
+  @include for-size(big-desktop-up) {
   font-size:20px;
   line-height: 20px;
+  }
 }
-}
-
 .title-division{
   width:100%;
 }
-
 .hero_title{
   width:100%;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0;
-@include for-size(phone-only) {
+  @include for-size(phone-only) {
   font-size: 26px;
   line-height: 34px;
-}
-@include for-size(tablet-portrait-up) {
+  }
+  @include for-size(tablet-portrait-up) {
   font-size:45px;
   line-height:52px;
-}
-@include for-size(tablet-landscape-up) {
+  }
+  @include for-size(tablet-landscape-up) {
   font-size: 68px;
   line-height:72px;
-}
-@include for-size(desktop-up) {
+  }
+  @include for-size(desktop-up) {
   font-size:80px;
   line-height: 80px;
-}
-@include for-size(big-desktop-up) {
+  }
+  @include for-size(big-desktop-up) {
   font-size:80px;
   line-height:80px;
-}
-
+  }
 }
 .hero_title:last-child {
    padding-bottom:2rem;
@@ -342,7 +337,6 @@ ul.sub-menu li:hover > ul.sub-menu{
     padding-bottom: 3rem;
   }
 }
-
 // btn setting
 .call-to-action{
   font-family:'Oswald', sans-serif;
@@ -360,27 +354,15 @@ ul.sub-menu li:hover > ul.sub-menu{
     padding:1rem 3rem;
   }
 }
-
 // main section starts from here
-
 div,#fluid-container,.service_container,article{
   padding:0;
   margin:0;
 }
-
 #fluid-container{
   width:100%;
   max-width:100%;
 }
-// .service_container, .about_container, .training_container, .upcoming_events_container,.plan_pricing_container{
-//   width:100%;
-//   max-width:100%;
-//   display: flex;
-//   flex-flow:row wrap;
-//   @include for-size(phone-only) {
-//     flex-flow:column , nowrap;
-//    }
-// }
 .service_container,.about_container, .training_container,.upcoming_events_container, .plan_pricing_container{
   display: flex;
   flex-flow:row wrap;
@@ -389,7 +371,6 @@ div,#fluid-container,.service_container,article{
      }
   justify-content: stretch;
 }
-
 .classes{
   background-color:#1a1b1b;
   display: flex;
@@ -571,9 +552,6 @@ i.fa:hover {
     font-size:16px;
   }
 }
-
-
-
 // training container 
 
 .training{
@@ -591,9 +569,7 @@ i.fa:hover {
 .white-theme{
   background-color:$smokewhite;
 }
-
 // events section
-
 .events_img{
   width:40%;
 }
@@ -642,7 +618,6 @@ i.fa:hover {
   color:$smokeblack;
 }
 // timer section
-
 .timer_container, .testimonial_container {
   width:100%;
   padding:4rem 0;
@@ -665,16 +640,12 @@ i.fa:hover {
  line-height: 6rem;
 }
 .countdown_timer_wrapper{
-  // border:2px solid $orange;
   @include flexcenter;
-
 }
 .demo{
   border:5px solid green;
 }
-
 // coding for timer pending
-
 .contact_container{
   width:100%;
  padding: 200px 0;
@@ -683,17 +654,6 @@ i.fa:hover {
 .commonPara{
   font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
 // plan section
 .plans_container{
   width:100%;
@@ -711,12 +671,11 @@ i.fa:hover {
   @include for-size(desktop-up){
   width:70%;
   margin:2rem auto;
-}
+  }
 }
 .plans{
   width:calc(100% / 3 - 2rem);
   margin:1.5rem 1rem;
-  // border:1px solid rgb(207, 58, 163);
 }
 
 .plan_pricing{
@@ -725,8 +684,6 @@ i.fa:hover {
     padding:1rem 0;
   }
   padding: 2.5rem;
-  // border:1px solid rgb(58, 47, 201);
-
 }
 .white_text{
 font-family: 'Poppins', sans-serif;
@@ -739,12 +696,10 @@ font-size: 18px;
 line-height: 1.7;
 }
 letter-spacing: 0px;
-// border:1px solid rgb(41, 119, 192);
 }
 .plan_description{
   background-color:$gray;
   padding: 1.6rem 0;
-  // border:1px solid rgb(60, 214, 206);
 }
 .plan_description_text-line-height-adjust{
   line-height:1.5rem;
@@ -764,7 +719,6 @@ letter-spacing: 0px;
   background-image: url("../../selectedImages/testimonial_bgi.jpg");
   opacity:1.0;
 }
-
 .testimonial {
   width:100%;
   @include for-size(desktop-up){
@@ -849,7 +803,6 @@ i.fa-angle-left{
 .control ul li.selected {
   background:$orange;
 }
-
 // blog section
 .news_container{
   width:100%;
@@ -1004,7 +957,6 @@ i.fa-angle-right{
 .column2{
   flex-basis:85%;
 }
-
 i.fa-map-o, i.fa-phone , i.fa-envelope-o{
   color:$orange;
   font-size: 1.5rem;
@@ -1022,7 +974,6 @@ font-family: 'Poppins', sans-serif;
 font-size: 12px;
 padding:0 0.6rem;
 }
-
 .classes, .intro, .training, .events_img, .events_text,.plans ,.blogs,.news, .footer-company-info, 
 .footer-links,.footer-Contacts{
   @include for-size(phone-only) {

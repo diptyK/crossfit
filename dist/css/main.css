@@ -223,7 +223,7 @@ ul.sub-menu li:hover > ul.sub-menu {
 
 @media screen and (max-width: 767px) {
   ul.nav-list {
-    position: fixed;
+    position: absolute;
     top: 100px;
     left: 0;
     right: 0;
